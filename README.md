@@ -78,6 +78,10 @@ The purpose of this diagram is to explain the most basic rules to people who don
 ### Bivariate Analysis
 Neither the scatter plot nor the box plot makes sense here for my variables because my values are true and false
 
+<iframe src="assets/fig_bi_box.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/fig_bi_scatter.html" width=800 height=600 frameBorder=0></iframe>
+
 ##### Distribution of first Tower Destroyed And Match Results:
 <iframe src="assets/fig_conditional_firsttower.html" width=800 height=600 frameBorder=0></iframe>
 
