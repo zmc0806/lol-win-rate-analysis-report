@@ -75,9 +75,16 @@ Since both teams will have the same game_id for each match, there will be winner
 
 The purpose of this diagram is to explain the most basic rules to people who don't know much about it. This picture shows that no matter who can destroy a tower, when the game is won, a tower must be destroyed.
 
+### Bivariate Analysis
+Neither the scatter plot nor the box plot makes sense here for my variables because my values are true and false
 
-
-
+##### Distribution of first Tower Destroyed And Match Results:
 <iframe src="assets/fig_conditional_firsttower.html" width=800 height=600 frameBorder=0></iframe>
 
+There were 9,079 games in which the team that destroyed a tower first won, and only 3,369 games in which the team that was pushed off a tower won.
+
+##### Distribution of first Tower Destroyed And First Middle Tower Destroyed:
 <iframe src="assets/fig_conditional_firstmidtower.html" width=800 height=600 frameBorder=0></iframe>
+
+This graph shows that the team that pushes down the first tower is more likely to push down the first middle tower.
+
