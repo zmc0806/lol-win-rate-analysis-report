@@ -74,3 +74,10 @@ Since both teams will have the same game_id for each match, there will be winner
 
 
 The purpose of this diagram is to explain the most basic rules to people who don't know much about it. This picture shows that no matter who can destroy a tower, when the game is won, a tower must be destroyed.
+
+
+
+
+<iframe src="assets/fig_conditional_firsttower.html" width=800 height=600 frameBorder=0></iframe>
+
+<iframe src="assets/fig_conditional_firstmidtower.html" width=800 height=600 frameBorder=0></iframe>
