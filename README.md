@@ -1,4 +1,4 @@
-# lol-win-rate-analysis-report
+# Analysis of the factors that affect the winning rate of League of Legends games
 
 ### Introduction to the Dataset
 
