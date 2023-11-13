@@ -1,4 +1,4 @@
-# lol-champions-win-rate-analysis-report
+# lol-win-rate-analysis-report
 
 ### Introduction to the Dataset
 
