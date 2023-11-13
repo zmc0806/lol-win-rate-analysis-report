@@ -65,12 +65,12 @@ This cleaned dataset now serves as the foundation for our analysis, with irrelev
 ### Univariate Analysis
 
 ##### Distribution of Match Results:
-<iframe src="result_distribution.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/result_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
 Since both teams will have the same game_id for each match, there will be winners for every match there will be losers, so the distribution should be pretty even here, as I expect.
 
 ##### Distribution of First Tower Captures in Matches:
-<iframe src="plot_firsttower_result.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/plot_firsttower_result.html" width=800 height=600 frameBorder=0></iframe>
 
 
 The purpose of this diagram is to explain the most basic rules to people who don't know much about it. This picture shows that no matter who can destroy a tower, when the game is won, a tower must be destroyed.
