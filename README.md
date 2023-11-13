@@ -100,4 +100,4 @@ This graph shows that the team that pushes down the first tower is more likely t
 | True                   |   0.636274 |               14269 |
 
 
-The significance of this table lies in the apparent difference in win rates: teams that capture the first tower have a substantially higher win rate than those that do not.  This suggests that capturing the first tower is a strong indicator of a team's likelihood of winning and can be considered a critical objective in match strategy.  
+The significance of this table lies in the apparent difference in win rates: teams that capture the first tower have a substantially higher win rate than those that do not.  This suggests that capturing the first tower is a strong indicator of a team's likelihood of winning.
