@@ -86,5 +86,5 @@ There were 9,079 games in which the team that destroyed a tower first won, and o
 ##### Distribution of first Tower Destroyed And First Middle Tower Destroyed:
 <iframe src="assets/fig_conditional_firstmidtower.html" width=800 height=600 frameBorder=0></iframe>
 
-This graph shows that the team that pushes down the first tower is more likely to push down the first middle tower.
+This graph shows that the team that pushes down the first tower is more likely to push down the first middle tower.It's also easier to win a race by pushing off more towers.
 
