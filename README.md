@@ -92,3 +92,12 @@ There were 9,079 games in which the team that destroyed a tower first won, and o
 
 This graph shows that the team that pushes down the first tower is more likely to push down the first middle tower.It's also easier to win a race by pushing off more towers.
 
+### Interesting Aggregates
+
+| First Tower Captured   |   Win Rate |   Number of Matches |
+|:-----------------------|-----------:|--------------------:|
+| False                  |   0.316903 |               10631 |
+| True                   |   0.636274 |               14269 |
+
+
+The significance of this table lies in the apparent difference in win rates: teams that capture the first tower have a substantially higher win rate than those that do not.  This suggests that capturing the first tower is a strong indicator of a team's likelihood of winning and can be considered a critical objective in match strategy.  
