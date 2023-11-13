@@ -101,3 +101,14 @@ This graph shows that the team that pushes down the first tower is more likely t
 
 
 The significance of this table lies in the apparent difference in win rates: teams that capture the first tower have a substantially higher win rate than those that do not.  This suggests that capturing the first tower is a strong indicator of a team's likelihood of winning.
+
+### Assessment of Missingness
+
+#### NMAR Analysis
+I'm going to assume that the url is NMAR, because actually this column has nothing to do with information about the game itself, it's just a website that records information about the game, so I'm going to assume it's NMAR. I'm assuming that the missing url will be affected by the result, and I'm assuming that the losing party sometimes doesn't want to upload its own data, so if the missing url is affected by the result, then it will become MAR.
+
+#### Missingness Dependency
+
+<iframe src="assets/NMAR_RESULT.html" width=800 height=600 frameBorder=0></iframe>
+
+This histogram visualizes the empirical distribution of test statistics dependent on the "url" column missing. The observed statistics are marked with vertical dashed lines on the histogram. The "p-value" of the permutation test is "0.983" and the "observed statistic" is about "0.000048", which shows that :- The observed statistic is very close to zero, which indicates that the difference in the proportion of missing between the two groups is very small. The -p value of '0.983' is very high, indicating that there is no significant difference in the miss rate between the groups defined by the 'url' column and the result column. Simply put, we have no evidence that the absence of 'url' depends on the result. So I think the missing url is self-related, so it's NMAR.
