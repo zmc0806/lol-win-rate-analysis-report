@@ -1,5 +1,5 @@
 # Analysis of the factors that affect the winning rate of League of Legends games
-
+Name:Mianchen Zhang
 ### Introduction to the Dataset
 
 The dataset provided contains detailed information on over 10,000 competitive matches from the popular video game League of Legends (LoL), a game that has not only captured the interest of millions of players worldwide but also established a significant presence in the esports industry. This dataset is a comprehensive collection of data from the year 2022, reflecting player and team performances, match outcomes, and various in-game statistics.
