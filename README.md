@@ -112,3 +112,14 @@ I'm going to assume that the url is NMAR, because actually this column has nothi
 <iframe src="assets/NMAR_RESULT.html" width=800 height=600 frameBorder=0></iframe>
 
 This histogram visualizes the empirical distribution of test statistics dependent on the "url" column missing. The observed statistics are marked with vertical dashed lines on the histogram. The "p-value" of the permutation test is "0.983" and the "observed statistic" is about "0.000048", which shows that :- The observed statistic is very close to zero, which indicates that the difference in the proportion of missing between the two groups is very small. The -p value of '0.983' is very high, indicating that there is no significant difference in the miss rate between the groups defined by the 'url' column and the result column. Simply put, we have no evidence that the absence of 'url' depends on the result. So I think the missing url is self-related, so it's NMAR.
+
+### Hypothesis Testing
+
+
+- **Null Hypothesis (H0)**: Capturing the first tower does not affect the chance of winning the match.
+- **Alternative Hypothesis (H1)**: Capturing the first tower increases the chance of winning the match.
+- **Test Statistic**: The difference in win rates between teams that capture the first tower and those that do not.
+- **Significance Level (α)**: 0.05 (commonly used threshold in hypothesis testing).
+- **p-value**: 0. The p-value is so small that it did not occur in any of the permutations, suggesting the result is highly significant.
+- **Conclusion**: Based on the permutation test, we reject the null hypothesis and conclude that there is a statistically significant association between capturing the first tower and winning the match.
+
