@@ -169,10 +169,10 @@ This histogram visualizes the empirical distribution of test statistics dependen
 ### Hypothesis Testing
 
 
-- **Null Hypothesis (H0)**: Capturing the first tower does not affect the chance of winning the match.
-- **Alternative Hypothesis (H1)**: Capturing the first tower increases the chance of winning the match.
-- **Test Statistic**: The difference in win rates between teams that capture the first tower and those that do not.
-- **Significance Level (α)**: 0.05 (commonly used threshold in hypothesis testing).
+- **Null Hypothesis (H0)**: The team that gets first blood does not affect the chance of winning the match.
+- **Alternative Hypothesis (H1)**: The team that gets first blood increases the chance of winning the match.
+- **Test Statistic**: The difference in win rates between teams that the team that gets one blood first and those that do not.
+- **Significance Level (α)**: 0.05.
 - **p-value**: 0. The p-value is so small that it did not occur in any of the permutations, suggesting the result is highly significant.
-- **Conclusion**: Based on the permutation test, we reject the null hypothesis and conclude that there is a statistically significant association between capturing the first tower and winning the match.
+- **Conclusion**: Based on the permutation test, we reject the null hypothesis and conclude that there is a statistically significant association between the team that gets first blood and winning the match.
 
