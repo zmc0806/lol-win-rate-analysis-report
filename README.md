@@ -82,12 +82,20 @@ team_data_cleaned = team_data_cleaned[mask]
 
 Now the distribution is exactly the same, just like I expected
 
-team_data_cleaned
-##### Distribution of First Tower Captures in Matches:
-<iframe src="assets/plot_firsttower_result.html" width=800 height=600 frameBorder=0></iframe>
+##### Distribution of First Blood in Matches:
+
+Now I also need to make sure that the data on firstblood is cleaned properly, which is very important for my later research, I only need to keep one blood with one team true and one team false.
+
+```python
+#Keep only two teams with one true and one false blood
+mask_1 = team_data_cleaned.groupby('gameid')['firstblood'].transform('sum') == 1
+filtered_data = team_data_cleaned[mask_1]
+```
+<iframe src="assets/firstblood_distribution.html" width=800 height=600 frameBorder=0></iframe>
+
+Now the distribution is also exactly the same.That means I successfully cleaned all the data.
 
 
-The purpose of this diagram is to explain the most basic rules to people who don't know much about it. This picture shows that no matter who can destroy a tower, when the game is won, a tower must be destroyed.
 
 ### Bivariate Analysis
 Neither the scatter plot nor the box plot makes sense here for my variables because my values are true and false
