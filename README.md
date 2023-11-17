@@ -112,11 +112,14 @@ filtered_data[['gameid','firstblood','result']].head(6)
 
 
 ### Bivariate Analysis
-Neither the scatter plot nor the box plot makes sense here for my variables because my values are true and false
 
-<iframe src="assets/fig_bi_box.html" width=800 height=600 frameBorder=0></iframe>
 
-<iframe src="assets/fig_bi_scatter.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/first_blood_result.html" width=800 height=600 frameBorder=0></iframe>
+From the histogram, we can observe that the count of true match results when the first blood is true is higher than when it's false, indicating a possible correlation between securing the first blood and winning the match. Conversely, the count of false match results (losing the match) is higher when the first blood is false than when it's true.
+
+The colors purple and green are used to differentiate the "Match Result" categories, with purple representing "True" and green representing "False". The x-axis represents the first blood status, while the y-axis shows the count of match results.
+
+In conclusion, this visual suggests that there might be a tendency for a team or individual that achieves the first blood to win the match, and conversely, not securing the first blood correlates with a higher likelihood of losing the match. However, without statistical analysis, Now we cannot determine the strength or significance of this relationship.
 
 ##### Distribution of first Tower Destroyed And Match Results:
 <iframe src="assets/fig_conditional_firsttower.html" width=800 height=600 frameBorder=0></iframe>
