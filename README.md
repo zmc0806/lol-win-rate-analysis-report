@@ -97,6 +97,7 @@ filtered_data = team_data_cleaned[mask_1]
 Now the distribution is also exactly the same.That means I successfully cleaned all the data.
 
 
+'| gameid                | firstblood   | result   |\n|:----------------------|:-------------|:---------|\n| ESPORTSTMNT01_2690210 | True         | False    |\n| ESPORTSTMNT01_2690210 | False        | True     |\n| ESPORTSTMNT01_2690219 | False        | False    |\n| ESPORTSTMNT01_2690219 | True         | True     |\n| 8401-8401_game_1      | False        | True     |\n| 8401-8401_game_1      | True         | False    |'
 
 ### Bivariate Analysis
 Neither the scatter plot nor the box plot makes sense here for my variables because my values are true and false
