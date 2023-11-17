@@ -139,7 +139,6 @@ From the box plot, we can see two distributions:
 
 Overall, the box plot suggests that achieving first blood is associated with a higher gold difference at the 10-minute mark in the game, but it also shows that there can be considerable variability. Teams that do not get first blood can still have a range of gold difference outcomes, some of which overlap with the outcomes of teams that do get first blood. The outliers, particularly in the 'true' category, indicate that there can be exceptional cases where the gold difference is significantly higher or lower than the typical range.
 
-There were 9,079 games in which the team that destroyed a tower first won, and only 3,369 games in which the team that was pushed off a tower won.
 
 ##### Distribution of first Tower Destroyed And First Middle Tower Destroyed:
 <iframe src="assets/fig_conditional_firstmidtower.html" width=800 height=600 frameBorder=0></iframe>
