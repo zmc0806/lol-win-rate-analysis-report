@@ -113,16 +113,31 @@ filtered_data[['gameid','firstblood','result']].head(6)
 
 ### Bivariate Analysis
 
-
+##### Distribution of First Blood And Match Results:
 <iframe src="assets/firstblood_result.html" width=800 height=600 frameBorder=0></iframe>
+
 From the histogram, we can observe that the count of true match results when the first blood is true is higher than when it's false, indicating a possible correlation between securing the first blood and winning the match. Conversely, the count of false match results (losing the match) is higher when the first blood is false than when it's true.
 
 The colors purple and green are used to differentiate the "Match Result" categories, with purple representing "True" and green representing "False". The x-axis represents the first blood status, while the y-axis shows the count of match results.
 
 In conclusion, this visual suggests that there might be a tendency for a team or individual that achieves the first blood to win the match, and conversely, not securing the first blood correlates with a higher likelihood of losing the match. However, without statistical analysis, Now we cannot determine the strength or significance of this relationship.
 
-##### Distribution of first Tower Destroyed And Match Results:
-<iframe src="assets/fig_conditional_firsttower.html" width=800 height=600 frameBorder=0></iframe>
+##### Boxplot of first blood And Match Results:
+<iframe src="assets/firstblood_golddiffat10.html" width=800 height=600 frameBorder=0></iframe>
+From the box plot, we can see two distributions:
+
+1. For 'true' first blood:
+   - The median is positive, at approximately 691, indicating that on average, when a team gets the first blood, they tend to have a gold advantage at the 10-minute mark.
+   - The interquartile range (IQR), from Q1 to Q3 (the edges of the box), shows that the middle 50% of the gold difference values lie between approximately -99 and 1518. This suggests a wide spread of outcomes even when first blood is secured.
+   - There are outliers on both ends, but notably, there is a significant positive outlier with a maximum gold difference of 9428, which is much higher than the upper fence of the data (considered the threshold for outliers, at 3942).
+   - The lower fence is at -2509, indicating that even with the first blood, some teams find themselves at a gold disadvantage at the 10-minute mark.
+
+2. For 'false' first blood:
+   - The median appears to be around zero or slightly negative, suggesting that not securing first blood does not drastically affect the gold difference at the 10-minute mark on average.
+   - The spread of the IQR is narrower compared to when first blood is 'true', with less variability in the gold difference.
+   - There are fewer outliers, and the extremes are less pronounced than in the 'true' category.
+
+Overall, the box plot suggests that achieving first blood is associated with a higher gold difference at the 10-minute mark in the game, but it also shows that there can be considerable variability. Teams that do not get first blood can still have a range of gold difference outcomes, some of which overlap with the outcomes of teams that do get first blood. The outliers, particularly in the 'true' category, indicate that there can be exceptional cases where the gold difference is significantly higher or lower than the typical range.
 
 There were 9,079 games in which the team that destroyed a tower first won, and only 3,369 games in which the team that was pushed off a tower won.
 
