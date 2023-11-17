@@ -139,12 +139,6 @@ From the box plot, we can see two distributions:
 
 Overall, the box plot suggests that achieving first blood is associated with a higher gold difference at the 10-minute mark in the game, but it also shows that there can be considerable variability. Teams that do not get first blood can still have a range of gold difference outcomes, some of which overlap with the outcomes of teams that do get first blood. The outliers, particularly in the 'true' category, indicate that there can be exceptional cases where the gold difference is significantly higher or lower than the typical range.
 
-
-##### Distribution of first Tower Destroyed And First Middle Tower Destroyed:
-<iframe src="assets/fig_conditional_firstmidtower.html" width=800 height=600 frameBorder=0></iframe>
-
-This graph shows that the team that pushes down the first tower is more likely to push down the first middle tower.It's also easier to win a race by pushing off more towers.
-
 ### Interesting Aggregates
 
 | First Blood   |   Win Rate |   Number of Matches |
@@ -153,7 +147,13 @@ This graph shows that the team that pushes down the first tower is more likely t
 | True                   |   0.608948 |               12428 |
 
 
-The significance of this table lies in the apparent difference in win rates: teams that capture the first tower have a substantially higher win rate than those that do not.  This suggests that capturing the first tower is a strong indicator of a team's likelihood of winning.
+When 'First Blood' is 'False', the win rate is approximately 39.1052%, with a total of 12,428 matches played.
+When 'First Blood' is 'True', the win rate increases significantly to approximately 60.8948%, with the same total of 12,428 matches played.
+This data suggests a strong correlation between securing the 'First Blood' and a team's or player's chances of winning, as the win rate is much higher when 'First Blood' is achieved. It is important to note that correlation does not imply causation, and there could be other factors at play that influence the win rate. However, the data presents a clear trend that achieving 'First Blood' is associated with a higher success rate in matches.
+
+The fact that the number of matches is the same for both categories indicates that the dataset is balanced, which gives equal weight to both scenarios in the analysis. This means that the win rate comparison is fair and not skewed by a larger sample size in one category over the other.
+
+This information can be valuable for teams or players in strategizing to prioritize securing the first point or score, as it appears to have a meaningful impact on the outcome of the matches.
 
 ### Assessment of Missingness
 
