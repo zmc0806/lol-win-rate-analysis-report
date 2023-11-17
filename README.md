@@ -19,7 +19,7 @@ Understanding the correlation between early-game advantages and match outcomes i
 - **Number of Rows**: The dataset initially contains over 10,000 matches, corresponding to multiple rows per match for individual players and teams.
 
 - **Relevant Columns and Descriptions**:
-  1. `gameid`: Unique identifier for each match.
+  1. `gameid`: Unique identifier for each match,each gameid will correspond to two teams.
   2. `teamid`: Identifier for each team in a match.
   3. `result`: Indicates whether the team won or lost.
   4. `firstblood`: Indicates whether the team achieved the first kill (First Blood) in the match.
