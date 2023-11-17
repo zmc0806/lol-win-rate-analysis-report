@@ -147,10 +147,10 @@ This graph shows that the team that pushes down the first tower is more likely t
 
 ### Interesting Aggregates
 
-| First Tower Captured   |   Win Rate |   Number of Matches |
+| First Blood   |   Win Rate |   Number of Matches |
 |:-----------------------|-----------:|--------------------:|
-| False                  |   0.316903 |               10631 |
-| True                   |   0.636274 |               14269 |
+| False                  |   0.391052 |               12428 |
+| True                   |   0.608948 |               12428 |
 
 
 The significance of this table lies in the apparent difference in win rates: teams that capture the first tower have a substantially higher win rate than those that do not.  This suggests that capturing the first tower is a strong indicator of a team's likelihood of winning.
