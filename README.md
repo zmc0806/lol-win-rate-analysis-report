@@ -57,9 +57,19 @@ The process of preparing the League of Legends dataset for analysis involved sev
 To illustrate the result of these cleaning steps, below is a snapshot of the cleaned team summary dataset:
 
 ```python
-# Displaying the first few rows of the cleaned team summary data
-team_data_cleaned.head()
+# Displaying the first 8 rows of the cleaned team summary data according my question.
+team_data_cleaned[['gameid','firsttower','firstblood','result']].head(8).to_markdown(index=False)
 ```
+| gameid                | firsttower   | firstblood   | result   |
+|:----------------------|:-------------|:-------------|:---------|
+| ESPORTSTMNT01_2690210 | True         | True         | False    |
+| ESPORTSTMNT01_2690210 | False        | False        | True     |
+| ESPORTSTMNT01_2690219 | False        | False        | False    |
+| ESPORTSTMNT01_2690219 | True         | True         | True     |
+| 8401-8401_game_1      | True         | False        | True     |
+| 8401-8401_game_1      | True         | True         | False    |
+| ESPORTSTMNT01_2690227 | True         | False        | True     |
+| ESPORTSTMNT01_2690227 | False        | True         | False    |
 
 This cleaned dataset now serves as the foundation for our analysis, with irrelevant and misleading data removed and the remaining data structured and formatted for accurate interpretation. The cleaning steps, tailored to the unique aspects of this dataset and our specific research question, enhance the validity and reliability of the subsequent analysis.
 
