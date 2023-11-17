@@ -164,7 +164,7 @@ I'm going to assume that the url is NMAR, because actually this column has nothi
 
 <iframe src="assets/NMAR_RESULT.html" width=800 height=600 frameBorder=0></iframe>
 
-This histogram visualizes the empirical distribution of test statistics dependent on the "url" column missing. The observed statistics are marked with vertical dashed lines on the histogram. The "p-value" of the permutation test is "0.983" and the "observed statistic" is about "0.000048", which shows that :- The observed statistic is very close to zero, which indicates that the difference in the proportion of missing between the two groups is very small. The -p value of '0.983' is very high, indicating that there is no significant difference in the miss rate between the groups defined by the 'url' column and the result column. Simply put, we have no evidence that the absence of 'url' depends on the result. So I think the missing url is self-related, so it's NMAR.
+This histogram visualizes the empirical distribution of test statistics dependent on the "url" column missing. The observed statistics are marked with vertical dashed lines on the histogram. The "p-value" of the permutation test is "1" and the "observed statistic" is about "0", which shows that :- The observed statistic is zero, which indicates that the difference in the proportion of missing between the two groups is does’t exist. The -p value of '1' is very high, indicating that there is no significant difference in the miss rate between the groups defined by the 'url' column and the result column. Simply put, we have no evidence that the absence of 'url' depends on the result. So I think the missing url is may self-related,The missing of the url has nothing to do with the result.
 
 ### Hypothesis Testing
 
@@ -176,3 +176,14 @@ This histogram visualizes the empirical distribution of test statistics dependen
 - **p-value**: 0. The p-value is so small that it did not occur in any of the permutations, suggesting the result is highly significant.
 - **Conclusion**: Based on the permutation test, we reject the null hypothesis and conclude that there is a statistically significant association between the team that gets first blood and winning the match.
 
+<iframe src="assets/Hypothesis.html" width=800 height=600 frameBorder=0></iframe>
+
+1. **Observed Statistic**: The red dashed line represents the observed statistic from your actual data.      If this line is far from the center of the distribution (which seems to be the case based on your description), it indicates that the observed effect (the impact of capturing the first tower on winning) is highly unusual under the null hypothesis of no effect.
+
+2. **Hypothesis Test Interpretation**: Since you mentioned that the p-value from this test is 0, it means that none of the permuted differences were as extreme as the observed difference.      This provides strong evidence against the null hypothesis and suggests that capturing the first blood has a statistically significant impact on winning the match.
+
+3. **Statistical Significance**: The fact that the observed statistic lies outside the range of most permuted differences (assuming the red line is far to the right of the histogram peak) implies that the result is statistically significant, and you would reject the null hypothesis in favor of the alternative hypothesis.
+
+4. **Implications**: While the test provides evidence that there is a statistically significant association between first blood and a higher probability of winning, it does not prove causality.    Other confounding factors could also be influencing the match outcome.
+
+In summary, this histogram and your p-value of 0 confirm that the impact of  first blood on winning is statistically significant and not likely due to random chance. 
