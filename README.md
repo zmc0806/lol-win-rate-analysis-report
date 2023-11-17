@@ -62,6 +62,7 @@ To illustrate the result of these cleaning steps, below is a snapshot of the cle
 # Displaying the first 8 rows of the cleaned team summary data according my question.
 team_data_cleaned[['gameid','firsttower','firstblood','result']].head(8)
 ```
+
 | gameid                | firsttower   | firstblood   | result   |
 |:----------------------|:-------------|:-------------|:---------|
 | ESPORTSTMNT01_2690210 | True         | True         | False    |
