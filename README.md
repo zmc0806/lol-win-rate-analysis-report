@@ -51,6 +51,8 @@ The process of preparing the League of Legends dataset for analysis involved sev
 #### 5. **Dataset Overview After Cleaning**:
    - **Action**: Assessed the shape of the cleaned datasets.
    - **Impact**: This provided a clear understanding of the dataset's size and scope after cleaning, setting the stage for effective analysis.
+     
+Since the problem I studied only needed to ensure the integrity of firstblood and result, datacompleteness had no effect on me
 
 #### Showcasing the Cleaned DataFrame
 
@@ -58,7 +60,7 @@ To illustrate the result of these cleaning steps, below is a snapshot of the cle
 
 ```python
 # Displaying the first 8 rows of the cleaned team summary data according my question.
-team_data_cleaned[['gameid','firsttower','firstblood','result']].head(8).to_markdown(index=False)
+team_data_cleaned[['gameid','firsttower','firstblood','result']].head(8)
 ```
 | gameid                | firsttower   | firstblood   | result   |
 |:----------------------|:-------------|:-------------|:---------|
