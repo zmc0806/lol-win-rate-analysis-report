@@ -114,7 +114,7 @@ filtered_data[['gameid','firstblood','result']].head(6)
 ### Bivariate Analysis
 
 
-<iframe src="assets/first_blood_result.html" width=800 height=600 frameBorder=0></iframe>
+<iframe src="assets/firstblood_result.html" width=800 height=600 frameBorder=0></iframe>
 From the histogram, we can observe that the count of true match results when the first blood is true is higher than when it's false, indicating a possible correlation between securing the first blood and winning the match. Conversely, the count of false match results (losing the match) is higher when the first blood is false than when it's true.
 
 The colors purple and green are used to differentiate the "Match Result" categories, with purple representing "True" and green representing "False". The x-axis represents the first blood status, while the y-axis shows the count of match results.
