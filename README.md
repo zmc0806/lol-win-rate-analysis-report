@@ -1,5 +1,7 @@
 # Analysis of the factors that affect the winning rate of League of Legends games
+
 Name:Mianchen Zhang
+
 ### Introduction to the Dataset
 
 The dataset provided contains detailed information on over 10,000 competitive matches from the popular video game League of Legends (LoL), a game that has not only captured the interest of millions of players worldwide but also established a significant presence in the esports industry. This dataset is a comprehensive collection of data from the year 2022, reflecting player and team performances, match outcomes, and various in-game statistics.
@@ -67,8 +69,20 @@ This cleaned dataset now serves as the foundation for our analysis, with irrelev
 ##### Distribution of Match Results:
 <iframe src="assets/result_distribution.html" width=800 height=600 frameBorder=0></iframe>
 
-Since both teams will have the same game_id for each match, there will be winners for every match there will be losers, so the distribution should be pretty even here, as I expect.
+Since both teams will have the same game_id for each match, there will be winners for every match there will be losers, so the distribution should be exactly,here is not。That means I missed the details when I was cleaning the data, so I need to go back and check.
 
+I found the problem, some gamids have false results for both teams, both teams can't lose in the same game, this is obviously not normal, so I need to rule this out.
+
+```python
+# I cleaned the data again to make sure that only the results of the game were normal
+mask = team_data_cleaned.groupby('gameid')['result'].transform('sum') == 1
+team_data_cleaned = team_data_cleaned[mask]
+```
+<iframe src="assets/result_distribution_new.html" width=800 height=600 frameBorder=0></iframe>
+
+Now the distribution is exactly the same, just like I expected
+
+team_data_cleaned
 ##### Distribution of First Tower Captures in Matches:
 <iframe src="assets/plot_firsttower_result.html" width=800 height=600 frameBorder=0></iframe>
 
