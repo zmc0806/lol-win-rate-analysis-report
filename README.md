@@ -246,6 +246,23 @@ Further investigation into why certain leagues have higher rates of missing 'url
 | False        | 0.501368  |
 | True         | 0.498632  |
 
+The image you've provided appears to show the output of a Python code snippet that is part of a permutation test. The output shows win rates based on the "firstblood" variable. 
+
+Here is the output text for clarity:
+
+```plaintext
+firstblood
+False    0.501287
+True     0.498713
+Name: result, dtype: float64
+```
+
+This output suggests that in the permuted sample, the mean win rate for teams that did not get first blood is 50.13%, and for teams that did get first blood is 49.87%. This is almost a negligible difference and contrary to the usual expectation that 'firstblood' would give a competitive edge.
+
+In the context of the permutation test where the 'firstblood' data is randomly shuffled, we would expect to see no significant difference between the groups if 'firstblood' had no real effect on the win rate. The closeness of these two numbers in a single permutation suggests that this particular permutation did not show any advantage for either group.
+
+However, to draw any conclusions from this test, we would need to compare the observed difference in win rates (from the non-permuted data) to the distribution of differences obtained through the permutation process. If the observed difference is greater than most of the permuted differences, it would suggest that 'firstblood' does indeed have an effect on the win rate. If the observed difference is similar to or smaller than most of the permuted differences, it would suggest that any observed association in the actual data could be due to chance.
+
 
 <iframe src="assets/Hypothesis.html" width=800 height=600 frameBorder=0></iframe>
 
