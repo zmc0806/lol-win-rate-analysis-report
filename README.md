@@ -266,6 +266,7 @@ However, to draw any conclusions from this test, we would need to compare the ob
 
 <iframe src="assets/Hypothesis.html" width=800 height=600 frameBorder=0></iframe>
 
+**Central Tendency**: The histogram shows the center of the distribution of permuted statistics is around zero, which would be expected if there was no effect—meaning, capturing the first tower has no impact on winning.
 
 
 #### Research Hypotheses
