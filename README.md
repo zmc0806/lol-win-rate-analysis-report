@@ -234,8 +234,8 @@ Further investigation into why certain leagues have higher rates of missing 'url
 ### Hypothesis Testing
 
 
-- **Null Hypothesis (H0)**: The team that gets first blood does not affect the chance of winning the match.
-- **Alternative Hypothesis (H1)**: The team that gets first blood increases the chance of winning the match.
+- **Null Hypothesis (H0)**: The team that gets first blood increases the chance of winning the match.
+- **Alternative Hypothesis (H1)**: The team that gets first blood does not affect the chance of winning the match.
 - **Test Statistic**: The difference in win rates between teams that the team that gets one blood first and those that do not.
 - **Significance Level (α)**: 0.05.
 - **p-value**: 0. The p-value is so small that it did not occur in any of the permutations, suggesting the result is highly significant.
