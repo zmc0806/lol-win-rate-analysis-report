@@ -195,11 +195,37 @@ This information can be valuable for teams or players in strategizing to priorit
 #### NMAR Analysis
 I'm going to assume that the url is NMAR, because actually this column has nothing to do with information about the game itself, it's just a website that records information about the game, so I'm going to assume it's NMAR. I'm assuming that the missing url will be affected by the result, and I'm assuming that the losing party sometimes doesn't want to upload its own data, so if the missing url is affected by the result, then it will become MAR.
 
-#### Missingness Dependency
+<iframe src="assets/Missingness of URL Dependent on Result.html" width=800 height=600 frameBorder=0></iframe>
 
-<iframe src="assets/NMAR_RESULT.html" width=800 height=600 frameBorder=0></iframe>
 
-This histogram visualizes the empirical distribution of test statistics dependent on the "url" column missing. The observed statistics are marked with vertical dashed lines on the histogram. The "p-value" of the permutation test is "1" and the "observed statistic" is about "0", which shows that :- The observed statistic is zero, which indicates that the difference in the proportion of missing between the two groups is does’t exist. The -p value of '1' is very high, indicating that there is no significant difference in the miss rate between the groups defined by the 'url' column and the result column. Simply put, we have no evidence that the absence of 'url' depends on the result. So I think the missing url is may self-related,The missing of the url has nothing to do with the result.
+### Analysis Report: Missingness of 'URL' Independent of 'Result'#### Executive Summary:A permutation test was executed to investigate the dependency of missing 'url' data on the 'result' (win or loss) of the matches in the dataset.The observed standard deviation of the proportions of missingness was 0.0, indicating no variability in the missingness of 'url' across the different results.The p-value of the permutation test is 1.0, suggesting that the missingness of 'url' is independent of the 'result'.  #### Test Methodology:The permutation test involved shuffling the 'result' column 1,000 times to simulate the null hypothesis that the missingness of 'url' is independent of the match outcome.For each permutation, the standard deviation of the proportions of missing 'url' data was calculated, assuming the 'result' categories had been randomized.  #### Observed Statistics:The observed standard deviation of the proportions of missing 'url' data across 'result' categories was 0.0. This implies that there is no variation in missing 'url' data between wins and losses.  #### Results:The null distribution of the standard deviation of proportions is centered near zero and does not overlap with the observed statistic, which is exactly at 0.0.  The p-value is 1.0, which is the highest possible p-value, leading us to fail to reject the null hypothesis.  #### Interpretation:The lack of variation in the missingness of 'url' across different 'result' categories indicates that the missing data is not dependent on whether a match is won or lost.   This could mean that the missing 'url' data is likely due to factors not related to the match outcome.  #### Consequences for Analysis:Given that the missingness of 'url' appears to be independent of 'result', we can assume that the missingness is Missing Completely At Random (MCAR) with respect to match outcomes.This simplifies the treatment of missing data because it suggests that the missingness does not introduce bias related to the 'result'.  #### Recommendations:The analysis can proceed without imputing missing 'url' data based on 'result', but further investigation into other potential dependencies is advised.   It may still be beneficial to explore if there are other factors associated with the missing 'url' data, or if it can be considered MCAR across all aspects of the dataset.  ---This report explains that the missingness of 'url' seems to be random concerning the 'result' of the matches, and no further action is needed specifically regarding this relationship. However, it's always good practice to explore other potential factors that might explain the missingness, as this could impact the analysis and conclusions drawn from the dataset.
+
+<iframe src="assets/Missingness of URL Dependent on League.html" width=800 height=600 frameBorder=0></iframe>
+
+#### Analysis Report: Missingness of 'URL' Dependent on 'League'
+
+#### Executive Summary:
+A permutation test was conducted to assess whether the missingness of the 'url' column in our dataset depends on the 'league' column. The test statistic used was the standard deviation of the proportions of missing values across leagues. The results indicated a significant dependency of missingness on league categories, with a p-value of 0.0 and an observed statistic of 0.2423.
+
+#### Test Methodology:
+We performed a permutation test involving 1,000 permutations. In each permutation, the 'league' column was shuffled, and the standard deviation of the proportions of missing 'url' values for each league (now randomly assigned) was recalculated. This process generated a null distribution of the test statistic under the hypothesis that the missingness of 'url' does not depend on 'league'.
+
+#### Observed Statistics:
+The standard deviation of the actual proportions of missing 'url' data across leagues was 0.2423. This value was compared against the null distribution of the standard deviation obtained from the permutation test.
+
+#### Results:
+The observed standard deviation was markedly higher than any of the standard deviations in the null distribution, as illustrated by the empirical histogram. With the p-value calculated at 0.0, we reject the null hypothesis that the missingness of 'url' is independent of 'league'.
+
+#### Interpretation:
+The significant p-value suggests that the missingness of 'url' is not occurring at random with respect to 'league'. This implies that certain leagues may have systemic factors causing URLs to be more frequently unrecorded. The strong dependency indicates that the mechanism behind the missing 'url' data is related to league-specific practices or policies.
+
+#### Consequences for Analysis:
+Given the NMAR (Not Missing At Random) nature of 'url', care must be taken when performing analyses that include this variable. Missingness correction techniques such as imputation should be considered carefully, as the pattern of missingness could bias any results if not appropriately handled.
+
+#### Recommendations:
+Further investigation into why certain leagues have higher rates of missing 'url' data is recommended. Understanding the data collection process for each league could help identify the underlying causes of missingness and suggest possible corrective actions. For future analyses, it may also be worth considering the collection of additional data that could explain the missingness, transforming it into a Missing At Random (MAR) scenario.
+
+
 
 ### Hypothesis Testing
 
