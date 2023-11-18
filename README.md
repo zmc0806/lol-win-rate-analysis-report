@@ -241,7 +241,14 @@ Further investigation into why certain leagues have higher rates of missing 'url
 - **p-value**: 0. The p-value is so small that it did not occur in any of the permutations, suggesting the result is highly significant.
 - **Conclusion**: Based on the permutation test, we reject the null hypothesis and conclude that there is a statistically significant association between the team that gets first blood and winning the match.
 
+| firstblood   |   result   |
+|--------------|-----------|
+| False        | 0.501368  |
+| True         | 0.498632  |
+
+
 <iframe src="assets/Hypothesis.html" width=800 height=600 frameBorder=0></iframe>
+
 
 1. **Observed Statistic**: The red dashed line represents the observed statistic from your actual data.      If this line is far from the center of the distribution (which seems to be the case based on your description), it indicates that the observed effect (the impact of capturing the first tower on winning) is highly unusual under the null hypothesis of no effect.
 
