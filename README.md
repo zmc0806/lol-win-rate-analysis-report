@@ -109,6 +109,28 @@ filtered_data = team_data_cleaned[mask_1]
 
 Now the distribution is also exactly the same.That means I successfully cleaned all the data.
 
+##### Distribution of gold different at 10min in Matches:
+
+<iframe src="assets/fig_golddiffat10.html" width=800 height=600 frameBorder=0></iframe>
+
+The distribution appears to be roughly symmetrical around the zero mark, suggesting that at the 10-minute point, it's just as common for a team to be ahead as it is to be behind in terms of gold difference.
+The majority of values are concentrated around the center of the distribution, which indicates that in most matches, the gold difference at 10 minutes is relatively small. This could imply that games are often quite balanced in the early stages.
+There are tails extending to both the left and the right, with the left tail representing matches where one team is significantly behind in gold, and the right tail representing matches where one team is significantly ahead. These tails are less dense, indicating these scenarios are less common but still possible.
+The range of gold difference spans from approximately -8000 to +8000, showing that while most games are close around the 10-minute mark, there can be matches with a substantial lead or deficit.
+
+##### Interactive Distribution of Gold Difference at 10 Minutes:
+
+<iframe src="assets/Interactive Distribution of Gold Difference.html" width=800 height=600 frameBorder=0></iframe>
+
+This pie chart shows the distribution of gold difference at the 10-minute mark in League of Legends matches, categorized by the magnitude of the lead or deficit. Here's an analysis of the chart:
+
+- **Balanced (44.6%)**: The largest portion of the pie chart is occupied by matches where the gold difference at 10 minutes is relatively small, suggesting that nearly half of the games are closely contested in the early stages.
+- **Slight Lead/Lag (36.0%)**: Over a third of the matches have a slight lead or lag, indicating that a significant number of games have a moderate but not decisive gold difference at the 10-minute mark.
+- **Moderate Lead/Lag (15.1%)**: A smaller fraction of matches show a moderate lead or lag, which may suggest that one team is starting to gain a substantial advantage that could impact the mid-game.
+- **Large Lead/Lag (4.4%)**: The smallest slice represents games where there's a large lead or deficit. These matches are less common, which could indicate that it's relatively rare for games to be heavily one-sided by the 10-minute mark.
+
+This distribution is valuable for strategists and players as it highlights the state of the game in the early phase and suggests that while many matches are competitive, a significant lead or lag by the 10-minute mark is not very common. Coaches and players might use this data to evaluate the importance of early game decisions and their potential impact on the overall outcome of the match.
+
 ```python
 # Show the first six rows
 filtered_data[['gameid','firstblood','result']].head(6)
